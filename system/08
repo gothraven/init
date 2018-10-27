@@ -1,0 +1,2 @@
+ssh keys of authorised machines are stored in the ~/.ssh/authorized_keys file by default
+but this depends on what is set to in the /etc/ssh/sshd_config file

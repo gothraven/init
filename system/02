@@ -1,0 +1,1 @@
+su -c "hostname 'new-sys-name'"

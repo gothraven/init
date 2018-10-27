@@ -1,0 +1,2 @@
+With super-user rights, we can edit '/etc/hostname'
+Running '/etc/init.d/hostname.sh start' will make the changes active.

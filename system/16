@@ -1,0 +1,6 @@
+There are two services to launch commands in a future time
+which are at and cron but the question is more about executing commands in a regular basis
+so cron is more suitable:
+
+cron -- daemon to execute scheduled commands
+
