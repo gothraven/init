@@ -1,3 +1,7 @@
 All we need to do is to add the following line in /etc/hosts :
 
-46.19.122.85 intra.42.fr
+46.19.122.85	intra.42.fr
+
+or use the commande:
+
+echo "46.19.122.85\tintra.42.fr" >> /etc/hosts
