@@ -1,0 +1,24 @@
+The name and IP address is 10.11.254.254
+
+We can find it in the result of the commande :
+
+- traceroute slash16.org:
+
+traceroute: Warning: slash16.org has multiple addresses; using 143.204.222.49
+traceroute to slash16.org (143.204.222.49), 64 hops max, 52 byte packets
+1  10.11.254.254 (10.11.254.254)  2.541 ms  3.491 ms  0.956 ms
+2  nat-1 (10.60.1.11)  0.174 ms  0.169 ms  0.166 ms
+3  dc3 (62.210.35.1)  1.978 ms  1.841 ms  1.387 ms
+4  195.154.1.174 (195.154.1.174)  1.074 ms  1.151 ms  1.053 ms
+5  a9k2-45x-s44-2.dc3.poneytelecom.eu (195.154.1.106)  1.281 ms  1.265 ms  1.171 ms
+6  amazon-th2.par.franceix.net (37.49.236.118)  0.959 ms  1.053 ms  1.030 ms
+7  52.93.16.20 (52.93.16.20)  2.948 ms
+52.93.16.132 (52.93.16.132)  2.543 ms  3.577 ms
+8  52.93.16.163 (52.93.16.163)  1.249 ms
+52.93.16.171 (52.93.16.171)  1.266 ms  1.314 ms
+9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  server-143-204-222-49.cdg3.r.cloudfront.net (143.204.222.49)  1.392 ms  1.269 ms  1.216 ms
