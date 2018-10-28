@@ -3,4 +3,4 @@ which are at and cron but the question is more about executing commands in a reg
 so cron is more suitable:
 
 cron -- daemon to execute scheduled commands
-
+/etc/init.d/cron {start|stop|status|restart|reload|force-reload}
