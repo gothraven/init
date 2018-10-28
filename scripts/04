@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: szaghban <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/28 18:59:39 by szaghban          #+#    #+#              #
+#    Updated: 2018/10/28 19:03:46 by szaghban         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+#!/bin/bash
+
+new=$(md5sum /etc/crontab)
+old=$(cat /var/lib/dpkg/info/cron.md5sums | grep /bin/crontab | cut -d' ' -f 1)
+
+if [ "$new" != "$old" ] ; then
+	echo "/etc/crontab has changed" | mail -s "[Changed] /etc/crontab" root
+	exit 1
+fi
